@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-image: url("../css/fundo.png");
+    color: #2cdf08;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* CABEÇALHO */
+
+.cabecalho {
+    width: 85%;
+    margin: 40px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 38px;
+    font-weight: bold;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    gap: 35px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #f1ecec;
+    font-size: 16px;
+}
+
+.menu .botao {
+    background-color: #dab40f;
+    color: rgb(238, 10, 10);
+    padding: 15px 45px;
+    border-radius: 30px;
+    margin-left: 25px;
+}
+
+/* PARTE PRINCIPAL */
+
+.principal {
+    width: 85%;
+    min-height: 75vh;
+    margin: 70px auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* TEXTO */
+
+.conteudo {
+    width: 45%;
+}
+
+.conteudo h2 {
+    font-size: 65px;
+    line-height: 1.1;
+    margin-bottom: 30px;
+}
+
+.conteudo p {
+    display: flex;
+    font-size: 18px;
+    color: #f7fcf8;
+    line-height: 1.6;
+    margin-bottom: 45px;
+    text-shadow: 20px 20px 50px #000000;
+}
+
+.botao-assinar {
+    display: inline-block;
+    background-color: #d19b05;
+    color: rgb(219, 11, 11);
+    text-decoration: none;
+    padding: 18px 45px;
+    border-radius: 35px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* IMAGEM */
+
+.imagem {
+    width: 50%;
+    
+
+}
+
+.imagem img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    border-radius: 20px;
+}
+
+/* RESPONSIVIDADE */
+
+@media (max-width: 768px) {
+
+    .cabecalho {
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    .menu {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .principal {
+        flex-direction: column;
+        text-align: center;
+        gap: 40px;
+    }
+
+    .conteudo,
+    .imagem {
+        width: 100%;
+    }
+
+    .conteudo h2 {
+        font-size: 42px;
+    }
+}
